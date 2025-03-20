@@ -3,12 +3,12 @@
 export default {
   darkMode: 'class',
   content: [
-    './components/**/*.vue',
-    './components/*.vue',
-    './layouts/*.vue',
-    './pages/**/*.vue',
-    './pages/*.vue',
-    './app/**/*.vue'
+    './components/*/.vue',
+    './layouts/*/.vue',
+    './pages/*/.vue',
+    './app.vue', // <- Adicione isso
+    './plugins/*/.js',
+    './nuxt.config.ts'
   ],
   theme: {
     fontSize: {
