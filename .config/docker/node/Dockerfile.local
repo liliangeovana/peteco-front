@@ -1,0 +1,6 @@
+FROM node:alpine
+WORKDIR /app
+COPY ./.config/docker/node/start-local.sh /usr/local/bin/start-local.sh
+RUN chmod +x /usr/local/bin/start-local.sh
+EXPOSE 3000
+CMD ["/usr/local/bin/start-local.sh"]

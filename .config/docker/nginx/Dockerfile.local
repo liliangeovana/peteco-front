@@ -1,0 +1,4 @@
+FROM nginx:alpine
+RUN cp  /usr/share/zoneinfo/America/Boa_Vista /etc/localtime
+RUN echo "America/Boa_Vista" >/etc/timezone
+CMD ["tail", "-f", "/dev/null"]
